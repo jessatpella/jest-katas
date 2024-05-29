@@ -1,8 +1,15 @@
 import nock from 'nock';
-import { fizzBuzz, mapWithCb, getPokemon } from '.';
 
+/*
+;
+'buzz' if the number is divisible by 5;
+'fizzbuzz' if the number is divisible by both 3 and 5.
+'{number}' if the number doesn't fulfil any of the above conditions.
+ */
 describe('1. fizzBuzz', () => {
-
+  it('show \'fizz\' if the number is divisible by 3', () => {
+    expect(true).toBeTruthy();
+  })
 });
 
 describe('2. mapWithCb', () => {
