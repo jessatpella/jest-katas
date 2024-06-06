@@ -10,6 +10,9 @@ describe('1. fizzBuzz', () => {
   it('shows \'fizz\' if the number is divisible by 3', () => {
     const fizzResult = fizzBuzz(3);
     expect(fizzResult).toBe("fizz");
+
+    const noFizzResult = fizzBuzz(6);
+    expect(noFizzResult).toBeUndefined();
   });
   it('shows \'fizz\' if the number is divisible by 5', () => {
     const result = fizzBuzz(5);
