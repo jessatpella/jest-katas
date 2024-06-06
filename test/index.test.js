@@ -10,13 +10,19 @@ describe('1. fizzBuzz', () => {
   it('shows \'fizz\' if the number is divisible by 3', () => {
     const fizzResult = fizzBuzz(3);
     expect(fizzResult).toBe("fizz");
-
-    const noFizzResult = fizzBuzz(7);
-    expect(noFizzResult).toBeUndefined();
   });
   it('shows \'fizz\' if the number is divisible by 5', () => {
     const result = fizzBuzz(5);
     expect(result).toBe("buzz");
+  });
+  it('shows the number when not divisible by 5 or 3', () => {
+    let input = 7;
+    const noFizzResult = fizzBuzz(input);
+    expect(noFizzResult).toBe(input);
+  });
+  it('shows \'fizzbuzz\' if the number is divisible by both 3 and 5', () => {
+      const fizzBuzzResult = fizzBuzz(15);
+      expect(fizzBuzzResult).toBe("fizzbuzz");
   });
 });
 

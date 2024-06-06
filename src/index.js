@@ -16,13 +16,16 @@ what should happen if the function is passed a string?
 
  */
 const fizzBuzz = (input) => {
-    if (input % 3 === 0) {
-        return 'fizz';
+    if (input % 3 === 0 && input % 5 === 0) {
+        return 'fizzbuzz';
     }
     if (input % 5 === 0) {
         return 'buzz';
     }
-    return undefined;
+    if (input % 3 === 0) {
+        return 'fizz';
+    }
+    return input;
 };
 
 export {
