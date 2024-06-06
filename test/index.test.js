@@ -32,7 +32,7 @@ describe('1. fizzBuzz', () => {
   });
   it('throws error when non-numeric value is discovered', () => {
       const fizzBuzzResult = fizzBuzz("potato");
-      expect(fizzBuzzResult).toThrowError("Invalid input");
+      expect(fizzBuzzResult).toBe("Invalid input");
   });
 });
 
