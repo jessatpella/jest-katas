@@ -9,7 +9,7 @@ import {fizzBuzz} from "../src";
 describe('1. fizzBuzz', () => {
   it('shows \'fizz\' if the number is divisible by 3', () => {
     const result = fizzBuzz(3);
-    expect(result).toBe(3);
+    expect(result).toBe("fizz");
   });
 });
 
