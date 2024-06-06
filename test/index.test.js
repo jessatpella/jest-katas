@@ -8,12 +8,18 @@ import {fizzBuzz} from "../src";
 
 describe('1. fizzBuzz', () => {
   it('shows \'fizz\' if the number is divisible by 3', () => {
-    const fizzResult = fizzBuzz(3);
-    expect(fizzResult).toBe("fizz");
+    const resultNumber = fizzBuzz(3);
+    expect(resultNumber).toBe("fizz");
+
+    const resultString = fizzBuzz("12");
+    expect(resultString).toBe("fizz");
   });
   it('shows \'fizz\' if the number is divisible by 5', () => {
-    const result = fizzBuzz(5);
-    expect(result).toBe("buzz");
+    const resultNumber = fizzBuzz(5);
+    expect(resultNumber).toBe("buzz");
+
+    const resultString = fizzBuzz("25");
+    expect(resultString).toBe("buzz");
   });
   it('shows the number when not divisible by 5 or 3', () => {
     let input = 7;
@@ -23,6 +29,10 @@ describe('1. fizzBuzz', () => {
   it('shows \'fizzbuzz\' if the number is divisible by both 3 and 5', () => {
       const fizzBuzzResult = fizzBuzz(15);
       expect(fizzBuzzResult).toBe("fizzbuzz");
+  });
+  it('throws error when non-numeric value is discovered', () => {
+      const fizzBuzzResult = fizzBuzz("potato");
+      expect(fizzBuzzResult).toThrowError("Invalid input");
   });
 });
 

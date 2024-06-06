@@ -16,6 +16,9 @@ what should happen if the function is passed a string?
 
  */
 const fizzBuzz = (input) => {
+    // if (isNaN(input)) {
+    //     throw new Error("Invalid input");
+    // }
     if (input % 3 === 0 && input % 5 === 0) {
         return 'fizzbuzz';
     }
@@ -27,6 +30,10 @@ const fizzBuzz = (input) => {
     }
     return input;
 };
+
+const validateInput = (input) => {
+
+}
 
 export {
     fizzBuzz,
