@@ -8,8 +8,12 @@ import {fizzBuzz} from "../src";
 
 describe('1. fizzBuzz', () => {
   it('shows \'fizz\' if the number is divisible by 3', () => {
-    const result = fizzBuzz(3);
-    expect(result).toBe("fizz");
+    const fizzResult = fizzBuzz(3);
+    expect(fizzResult).toBe("fizz");
+  });
+  it('shows \'fizz\' if the number is divisible by 5', () => {
+    const result = fizzBuzz(5);
+    expect(result).toBe("buzz");
   });
 });
 

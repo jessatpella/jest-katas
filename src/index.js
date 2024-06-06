@@ -16,7 +16,7 @@ what should happen if the function is passed a string?
 
  */
 const fizzBuzz = (input) => {
-  return 'fizz';
+  return (input % 3 === 0) ? "fizz" : "buzz"
 };
 
 export {
