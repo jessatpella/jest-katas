@@ -1,3 +1,4 @@
 node_modules
 answers.md
 .idea/
+/.jest-cache/
