@@ -11,7 +11,7 @@ describe('1. fizzBuzz', () => {
     const fizzResult = fizzBuzz(3);
     expect(fizzResult).toBe("fizz");
 
-    const noFizzResult = fizzBuzz(6);
+    const noFizzResult = fizzBuzz(7);
     expect(noFizzResult).toBeUndefined();
   });
   it('shows \'fizz\' if the number is divisible by 5', () => {
