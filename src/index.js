@@ -15,8 +15,8 @@ what should fizzbuzz(0) return?
 what should happen if the function is passed a string?
 
  */
-const fizzBuzz = () => {
-  return 3;
+const fizzBuzz = (input) => {
+  return 'fizz';
 };
 
 export {
